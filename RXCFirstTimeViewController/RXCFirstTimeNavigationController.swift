@@ -12,7 +12,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
 
     /// is this view during rotation transition?
     open var rxc_isRotating: Bool = false
-    open var rxc_viewState:ViewState = .none
+    open var rxc_viewState:RFTViewState = .none
     open var rxc_layouting:Bool = false
 
     open var rxc_viewDidLoadTasks:[RXCViewControllerLifeCycleTask] = []
@@ -24,7 +24,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     open var rxc_didDisappearTasks:[RXCViewControllerLifeCycleTask] = []
 
     open var rxc_viewDidLoad_called:Bool = false
-    override open func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         self.rxc_viewState = .viewDidLoad
         if !self.rxc_viewDidLoad_called {
@@ -44,7 +44,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewWillAppear_called:Bool = false
-    override open func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.rxc_viewState = .willAppear
         if !self.rxc_viewWillAppear_called {
@@ -64,7 +64,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewWillLayoutSubviews_called:Bool = false
-    override open func viewWillLayoutSubviews() {
+    open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.rxc_layouting = true
         if !self.rxc_viewWillLayoutSubviews_called {
@@ -91,7 +91,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewDidLayoutSubviews_called:Bool = false
-    override open func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.rxc_layouting = false
         if !self.rxc_viewDidLayoutSubviews_called {
@@ -103,6 +103,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
         }
         self.checkDidLayoutSubviewsTasks()
     }
+
     open func rxc_viewDidLayoutSubviews_first(){
 
     }
@@ -126,6 +127,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
             self.rxc_viewLayoutMarginsDidChange_first()
         }
     }
+
     @available(iOS 11, *)
     open func rxc_viewLayoutMarginsDidChange_first(){
 
@@ -141,13 +143,14 @@ open class RXCFirstTimeNavigationController: UINavigationController {
             self.rxc_viewSafeAreaInsetsDidChange_first()
         }
     }
+
     @available(iOS 11, *)
     open func rxc_viewSafeAreaInsetsDidChange_first() {
 
     }
 
     open var rxc_viewDidAppear_called:Bool = false
-    override open func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.rxc_viewState = .didAppear
         if !self.rxc_viewDidAppear_called {
@@ -167,7 +170,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewWillDisappear_called:Bool = false
-    override open func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.rxc_viewState = .willDisappear
         if !self.rxc_viewWillDisappear_called {
@@ -187,7 +190,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewDidDisappear_called:Bool = false
-    override open func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.rxc_viewState = .Disappear
         if !self.rxc_viewDidDisappear_called {
@@ -206,7 +209,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
         self.rxc_didDisappearTasks.removeAll(where: {$0.removeAfterExecuted})
     }
 
-    override open func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         self.rxc_isRotating = true
         coordinator.animateAlongsideTransition(in: nil, animation: nil) {[weak self] (_) in
@@ -220,7 +223,7 @@ open class RXCFirstTimeNavigationController: UINavigationController {
     }
 
     open var rxc_viewConstraintsInited:Bool = false
-    func rxc_initViewConstraintsIfNeeded() {
+    open func rxc_initViewConstraintsIfNeeded() {
         if !self.rxc_viewConstraintsInited {
             self.rxc_viewConstraintsInited = true
             self.rxc_initViewConstraints()
