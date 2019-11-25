@@ -16,8 +16,8 @@
 		809351E7238ADF100088E6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809351E5238ADF100088E6D7 /* LaunchScreen.storyboard */; };
 		809351F0238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */; };
 		809351F4238AE2530088E6D7 /* UIViewController+MethodSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */; };
-		809351F6238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */; };
-		809351F8238AE4070088E6D7 /* RXCFirstTimrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */; };
+		809351F6238AE36F0088E6D7 /* UIViewController+FirstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F5238AE36F0088E6D7 /* UIViewController+FirstTimeFunction.swift */; };
+		809351F8238AE4070088E6D7 /* RXCFirstTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F7238AE4070088E6D7 /* RXCFirstTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		809351E8238ADF100088E6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodCalled.swift"; sourceTree = "<group>"; };
 		809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodSwitch.swift"; sourceTree = "<group>"; };
-		809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstTimrFunction.swift"; sourceTree = "<group>"; };
-		809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimrViewController.swift; sourceTree = "<group>"; };
+		809351F5238AE36F0088E6D7 /* UIViewController+FirstTimeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstTimeFunction.swift"; sourceTree = "<group>"; };
+		809351F7238AE4070088E6D7 /* RXCFirstTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,10 @@
 		809351EE238ADF1C0088E6D7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */,
+				809351F7238AE4070088E6D7 /* RXCFirstTimeViewController.swift */,
 				809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */,
 				809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */,
-				809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */,
+				809351F5238AE36F0088E6D7 /* UIViewController+FirstTimeFunction.swift */,
 				8044D866238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift */,
 			);
 			name = Source;
@@ -166,10 +166,10 @@
 				809351DB238ADF0F0088E6D7 /* AppDelegate.swift in Sources */,
 				8044D867238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift in Sources */,
 				809351DD238ADF0F0088E6D7 /* SceneDelegate.swift in Sources */,
-				809351F8238AE4070088E6D7 /* RXCFirstTimrViewController.swift in Sources */,
+				809351F8238AE4070088E6D7 /* RXCFirstTimeViewController.swift in Sources */,
 				809351F4238AE2530088E6D7 /* UIViewController+MethodSwitch.swift in Sources */,
 				809351F0238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift in Sources */,
-				809351F6238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift in Sources */,
+				809351F6238AE36F0088E6D7 /* UIViewController+FirstTimeFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

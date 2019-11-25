@@ -1,5 +1,5 @@
 //
-//  UIViewController+FirstTimrFunction.swift
+//  UIViewController+FirstTimeFunction.swift
 //  Example
 //
 //  Created by ruixingchen on 2019/11/25.
@@ -11,19 +11,19 @@ import UIKit
 extension UIViewController {
 
     @objc open func ftv_viewWillAppear_first(_ animated: Bool) {
-        
-    }
-
-    @objc func ftv_viewLayoutMarginsDidChange_first() {
 
     }
 
-    @objc func ftv_viewSafeAreaInsetsDidChange_first() {
+    @objc open func ftv_viewLayoutMarginsDidChange_first() {
+
+    }
+
+    @objc open func ftv_viewSafeAreaInsetsDidChange_first() {
 
     }
 
     @available(iOS 6.0, *)
-    @objc func ftv_updateViewConstraints_first() {
+    @objc open func ftv_updateViewConstraints_first() {
 
     }
 

@@ -1,5 +1,5 @@
 //
-//  RXCFirstTimrViewController.swift
+//  RXCFirstTimeViewController.swift
 //  Example
 //
 //  Created by ruixingchen on 2019/11/25.
@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
 
     ///start method exchange, no any queue safe guarantees, make sure will only be called once
-    static func ftv_start() {
+    public static func ftv_start() {
         var selectors:[Selector] = [
             #selector(loadView),
             #selector(viewDidLoad),

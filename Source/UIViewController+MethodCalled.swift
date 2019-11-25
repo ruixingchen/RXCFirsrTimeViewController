@@ -24,8 +24,11 @@ extension UIViewController {
         case loadView
         case viewDidLoad
         case viewWillAppear
+        @available(iOS 11, *)
         case viewLayoutMarginsDidChange
+        @available(iOS 11, *)
         case viewSafeAreaInsetsDidChange
+        @available(iOS 6, *)
         case updateViewConstraints
         case viewWillLayoutSubviews
         case viewDidLayoutSubviews
@@ -54,23 +57,6 @@ extension UIViewController {
 
         static var ftv_willMove_called = "ftv_willMove_called"
         static var ftv_didMove_called = "ftv_didMove_called"
-
-        //Task
-
-        static var ftv_loadView_task = "ftv_viewWillAppear_called"
-        static var ftv_viewDidLoad_task = "ftv_viewWillAppear_called"
-        static var ftv_viewWillAppear_task = "ftv_viewWillAppear_called"
-        static var ftv_viewLayoutMarginsDidChange_task = "ftv_viewLayoutMarginsDidChange_called"
-        static var ftv_viewSafeAreaInsetsDidChange_task = "ftv_viewSafeAreaInsetsDidChange_called"
-        static var ftv_updateViewConstraints_task = "ftv_updateViewConstraints_called"
-        static var ftv_viewWillLayoutSubviews_task = "ftv_viewWillLayoutSubviews_called"
-        static var ftv_viewDidLayoutSubviews_task = "ftv_viewDidLayoutSubviews_called"
-        static var ftv_viewDidAppear_task = "ftv_viewDidAppear_called"
-        static var ftv_viewWillDisappear_task = "ftv_viewWillDisappear_called"
-        static var ftv_viewDidDisappear_task = "ftv_viewDidDisappear_called"
-
-        static var ftv_willMove_task = "ftv_willMove"
-        static var ftv_didMove_task = "ftv_didMove"
     }
 
     public internal(set) var ftv_lifeCycle:FTVLifeCycle {
