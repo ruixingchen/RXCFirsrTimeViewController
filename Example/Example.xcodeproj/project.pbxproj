@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8044D867238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8044D866238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift */; };
 		809351DB238ADF0F0088E6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351DA238ADF0F0088E6D7 /* AppDelegate.swift */; };
 		809351DD238ADF0F0088E6D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351DC238ADF0F0088E6D7 /* SceneDelegate.swift */; };
 		809351DF238ADF0F0088E6D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351DE238ADF0F0088E6D7 /* ViewController.swift */; };
 		809351E2238ADF0F0088E6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809351E0238ADF0F0088E6D7 /* Main.storyboard */; };
 		809351E4238ADF100088E6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809351E3238ADF100088E6D7 /* Assets.xcassets */; };
 		809351E7238ADF100088E6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809351E5238ADF100088E6D7 /* LaunchScreen.storyboard */; };
-		809351F0238ADF1C0088E6D7 /* UIViewController+StorageProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351EF238ADF1C0088E6D7 /* UIViewController+StorageProperty.swift */; };
+		809351F0238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */; };
 		809351F4238AE2530088E6D7 /* UIViewController+MethodSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */; };
 		809351F6238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */; };
 		809351F8238AE4070088E6D7 /* RXCFirstTimrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8044D866238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+LifeCycleTask.swift"; sourceTree = "<group>"; };
 		809351D7238ADF0F0088E6D7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809351DA238ADF0F0088E6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809351DC238ADF0F0088E6D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		809351E3238ADF100088E6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809351E6238ADF100088E6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809351E8238ADF100088E6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		809351EF238ADF1C0088E6D7 /* UIViewController+StorageProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StorageProperty.swift"; sourceTree = "<group>"; };
+		809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodCalled.swift"; sourceTree = "<group>"; };
 		809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodSwitch.swift"; sourceTree = "<group>"; };
 		809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstTimrFunction.swift"; sourceTree = "<group>"; };
 		809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimrViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				809351F7238AE4070088E6D7 /* RXCFirstTimrViewController.swift */,
-				809351EF238ADF1C0088E6D7 /* UIViewController+StorageProperty.swift */,
+				809351EF238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift */,
 				809351F3238AE2530088E6D7 /* UIViewController+MethodSwitch.swift */,
 				809351F5238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift */,
+				8044D866238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -161,10 +164,11 @@
 			files = (
 				809351DF238ADF0F0088E6D7 /* ViewController.swift in Sources */,
 				809351DB238ADF0F0088E6D7 /* AppDelegate.swift in Sources */,
+				8044D867238B65DB00331D08 /* UIVIewController+LifeCycleTask.swift in Sources */,
 				809351DD238ADF0F0088E6D7 /* SceneDelegate.swift in Sources */,
 				809351F8238AE4070088E6D7 /* RXCFirstTimrViewController.swift in Sources */,
 				809351F4238AE2530088E6D7 /* UIViewController+MethodSwitch.swift in Sources */,
-				809351F0238ADF1C0088E6D7 /* UIViewController+StorageProperty.swift in Sources */,
+				809351F0238ADF1C0088E6D7 /* UIViewController+MethodCalled.swift in Sources */,
 				809351F6238AE36F0088E6D7 /* UIViewController+FirstTimrFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

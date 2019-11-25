@@ -1,5 +1,5 @@
 //
-//  UIViewController+StorageProperty.swift
+//  UIViewController+MethodCalled.swift
 //  RXCFirstTimeViewController
 //
 //  Created by ruixingchen on 2019/11/24.
@@ -138,76 +138,6 @@ extension UIViewController {
     public internal(set) var ftv_didMove_called:Bool {
         get {return objc_getAssociatedObject(self, &Key.ftv_didMove_called) as? Bool ?? false}
         set {objc_setAssociatedObject(self, &Key.ftv_didMove_called, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-}
-
-//MARK: - Task
-extension UIViewController {
-
-    public var ftv_loadViewTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_loadView_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_loadView_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewDidLoadTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewDidLoad_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewDidLoad_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewWillAppearTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewWillAppear_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewWillAppear_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewLayoutMarginsDidChangeTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewLayoutMarginsDidChange_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewLayoutMarginsDidChange_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewSafeAreaInsetsDidChangeTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewSafeAreaInsetsDidChange_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewSafeAreaInsetsDidChange_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_updateViewConstraintsTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_updateViewConstraints_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_updateViewConstraints_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewWillLayoutSubviewsTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewWillLayoutSubviews_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewWillLayoutSubviews_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewDidLayoutSubviewsTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewDidLayoutSubviews_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewDidLayoutSubviews_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewDidAppearTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewDidAppear_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewDidAppear_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewWillDisappearTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewWillDisappear_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewWillDisappear_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_viewDidDisappearTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_viewDidDisappear_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_viewDidDisappear_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_willMoveTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_willMove_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_willMove_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
-    }
-
-    public var ftv_didMoveTasks:[FTVLifeCycleTask] {
-        get {return objc_getAssociatedObject(self, &Key.ftv_didMove_task) as? [FTVLifeCycleTask] ?? []}
-        set {objc_setAssociatedObject(self, &Key.ftv_didMove_task, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
     }
 
 }

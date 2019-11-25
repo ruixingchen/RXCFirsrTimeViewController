@@ -22,6 +22,7 @@ extension UIViewController {
 
     }
 
+    @available(iOS 6.0, *)
     @objc func ftv_updateViewConstraints_first() {
 
     }

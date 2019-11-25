@@ -8,19 +8,6 @@
 
 import UIKit
 
-public class FTVLifeCycleTask {
-
-    public var removedAfterExcuted:Bool
-
-    internal var task:()->Void
-
-    public init(removedAfterExcuted:Bool=true, task: @escaping ()->Void) {
-        self.task = task
-        self.removedAfterExcuted = removedAfterExcuted
-    }
-
-}
-
 extension UIViewController {
 
     ///start method exchange, no any queue safe guarantees, make sure will only be called once
@@ -77,3 +64,9 @@ extension UIViewController {
 
 }
 
+internal func ftvlog(_ closure:@autoclosure ()->Any, file:StaticString = #file,line:Int = #line,function:StaticString = #function) {
+    #if (debug || DEBUG)
+    let fileName = String(describing: file).components(separatedBy: "/").last ?? ""
+    print("\(fileName):\(line) - \(function) : \(closure())")
+    #endif
+}
