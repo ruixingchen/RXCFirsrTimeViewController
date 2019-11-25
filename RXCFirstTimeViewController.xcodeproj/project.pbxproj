@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		809351CD238ADEE90088E6D7 /* UIViewController+StorageProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809351CC238ADEE90088E6D7 /* UIViewController+StorageProperty.swift */; };
 		80B1671D236B107500D94D6F /* RXCFirstTimeViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B16713236B107400D94D6F /* RXCFirstTimeViewController.framework */; };
 		80B16722236B107500D94D6F /* RXCFirstTimeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16721236B107500D94D6F /* RXCFirstTimeViewControllerTests.swift */; };
 		80B16724236B107500D94D6F /* RXCFirstTimeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B16716236B107400D94D6F /* RXCFirstTimeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80B1672F236B10AD00D94D6F /* RXCFirstTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B1672E236B10AD00D94D6F /* RXCFirstTimeViewController.swift */; };
-		80B16731236B182F00D94D6F /* RXCFirstTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16730236B182F00D94D6F /* RXCFirstTimeTableViewController.swift */; };
-		80B16733236B185900D94D6F /* RXCFirstTimeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16732236B185900D94D6F /* RXCFirstTimeNavigationController.swift */; };
-		80B16735236B187B00D94D6F /* RXCFirstTimeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16734236B187B00D94D6F /* RXCFirstTimeTabBarController.swift */; };
-		80B16737236B18C300D94D6F /* RXCFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16736236B18C300D94D6F /* RXCFirstPageViewController.swift */; };
-		80B16739236B192500D94D6F /* RXCFirstTimeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16738236B192500D94D6F /* RXCFirstTimeCollectionViewController.swift */; };
-		80B1673B236B195E00D94D6F /* RXCFirstTimeSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B1673A236B195E00D94D6F /* RXCFirstTimeSplitViewController.swift */; };
+		80E45C92238B85A2009FBF76 /* UIViewController+MethodCalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */; };
+		80E45C93238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C8E238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift */; };
+		80E45C94238B85A2009FBF76 /* RXCFirstTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */; };
+		80E45C95238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */; };
+		80E45C96238B85A2009FBF76 /* UIViewController+MethodSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		809351CC238ADEE90088E6D7 /* UIViewController+StorageProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StorageProperty.swift"; sourceTree = "<group>"; };
 		80B16713236B107400D94D6F /* RXCFirstTimeViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXCFirstTimeViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B16716236B107400D94D6F /* RXCFirstTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXCFirstTimeViewController.h; sourceTree = "<group>"; };
 		80B16717236B107400D94D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B1671C236B107500D94D6F /* RXCFirstTimeViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXCFirstTimeViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B16721236B107500D94D6F /* RXCFirstTimeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeViewControllerTests.swift; sourceTree = "<group>"; };
 		80B16723236B107500D94D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80B1672E236B10AD00D94D6F /* RXCFirstTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeViewController.swift; sourceTree = "<group>"; };
-		80B16730236B182F00D94D6F /* RXCFirstTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeTableViewController.swift; sourceTree = "<group>"; };
-		80B16732236B185900D94D6F /* RXCFirstTimeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeNavigationController.swift; sourceTree = "<group>"; };
-		80B16734236B187B00D94D6F /* RXCFirstTimeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeTabBarController.swift; sourceTree = "<group>"; };
-		80B16736236B18C300D94D6F /* RXCFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstPageViewController.swift; sourceTree = "<group>"; };
-		80B16738236B192500D94D6F /* RXCFirstTimeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeCollectionViewController.swift; sourceTree = "<group>"; };
-		80B1673A236B195E00D94D6F /* RXCFirstTimeSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeSplitViewController.swift; sourceTree = "<group>"; };
+		80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodCalled.swift"; sourceTree = "<group>"; };
+		80E45C8E238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIewController+LifeCycleTask.swift"; sourceTree = "<group>"; };
+		80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeViewController.swift; sourceTree = "<group>"; };
+		80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstTimeFunction.swift"; sourceTree = "<group>"; };
+		80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodSwitch.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +63,11 @@
 		809351CB238ADED10088E6D7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				809351CC238ADEE90088E6D7 /* UIViewController+StorageProperty.swift */,
+				80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */,
+				80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */,
+				80E45C8E238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift */,
+				80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */,
+				80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -98,13 +96,6 @@
 			children = (
 				80B16716236B107400D94D6F /* RXCFirstTimeViewController.h */,
 				80B16717236B107400D94D6F /* Info.plist */,
-				80B1672E236B10AD00D94D6F /* RXCFirstTimeViewController.swift */,
-				80B16730236B182F00D94D6F /* RXCFirstTimeTableViewController.swift */,
-				80B16732236B185900D94D6F /* RXCFirstTimeNavigationController.swift */,
-				80B16734236B187B00D94D6F /* RXCFirstTimeTabBarController.swift */,
-				80B16736236B18C300D94D6F /* RXCFirstPageViewController.swift */,
-				80B16738236B192500D94D6F /* RXCFirstTimeCollectionViewController.swift */,
-				80B1673A236B195E00D94D6F /* RXCFirstTimeSplitViewController.swift */,
 			);
 			path = RXCFirstTimeViewController;
 			sourceTree = "<group>";
@@ -228,14 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80B16739236B192500D94D6F /* RXCFirstTimeCollectionViewController.swift in Sources */,
-				80B1672F236B10AD00D94D6F /* RXCFirstTimeViewController.swift in Sources */,
-				80B16735236B187B00D94D6F /* RXCFirstTimeTabBarController.swift in Sources */,
-				809351CD238ADEE90088E6D7 /* UIViewController+StorageProperty.swift in Sources */,
-				80B16737236B18C300D94D6F /* RXCFirstPageViewController.swift in Sources */,
-				80B1673B236B195E00D94D6F /* RXCFirstTimeSplitViewController.swift in Sources */,
-				80B16733236B185900D94D6F /* RXCFirstTimeNavigationController.swift in Sources */,
-				80B16731236B182F00D94D6F /* RXCFirstTimeTableViewController.swift in Sources */,
+				80E45C94238B85A2009FBF76 /* RXCFirstTimeViewController.swift in Sources */,
+				80E45C95238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift in Sources */,
+				80E45C96238B85A2009FBF76 /* UIViewController+MethodSwitch.swift in Sources */,
+				80E45C92238B85A2009FBF76 /* UIViewController+MethodCalled.swift in Sources */,
+				80E45C93238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
