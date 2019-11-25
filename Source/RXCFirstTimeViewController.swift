@@ -10,6 +10,8 @@ import UIKit
 
 extension UIViewController {
 
+    public static var ftv_debug:Bool = false
+
     ///start method exchange, no any queue safe guarantees, make sure will only be called once
     public static func ftv_start() {
         var selectors:[Selector] = [
@@ -66,7 +68,9 @@ extension UIViewController {
 
 internal func ftvlog(_ closure:@autoclosure ()->Any, file:StaticString = #file,line:Int = #line,function:StaticString = #function) {
     #if (debug || DEBUG)
-    let fileName = String(describing: file).components(separatedBy: "/").last ?? ""
-    print("\(fileName):\(line) - \(function) : \(closure())")
+    if UIViewController.ftv_debug {
+        let fileName = String(describing: file).components(separatedBy: "/").last ?? ""
+        print("\(fileName):\(line) - \(function) : \(closure())")
+    }
     #endif
 }
