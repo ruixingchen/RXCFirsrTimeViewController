@@ -66,9 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */,
+				80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */,
 				80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */,
 				80E45C8E238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift */,
-				80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */,
 				80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */,
 				80F08A1E238CD11300AE8947 /* UIViewController+InitViewConstraints.swift */,
 			);

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController.Key {
 
-    static var ftv_initViewConstraints_called = "ftv_initViewConstraints_called"
+    internal static var ftv_initViewConstraints_called = "ftv_initViewConstraints_called"
 
 }
 
@@ -21,13 +21,13 @@ extension UIViewController {
         set {objc_setAssociatedObject(self, &Key.ftv_initViewConstraints_called, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
     }
 
-    public func ftv_initViewConstraintsIfNeeded() {
+    @objc open func ftv_initViewConstraintsIfNeeded() {
         if self.ftv_initViewConstraints_called {return}
         self.ftv_initViewConstraints_called = true
         self.ftv_initViewConstraints()
     }
 
-    public func ftv_initViewConstraints() {
+    @objc open func ftv_initViewConstraints() {
 
     }
 
