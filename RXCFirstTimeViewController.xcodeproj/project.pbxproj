@@ -15,6 +15,7 @@
 		80E45C94238B85A2009FBF76 /* RXCFirstTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */; };
 		80E45C95238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */; };
 		80E45C96238B85A2009FBF76 /* UIViewController+MethodSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */; };
+		80F08A1F238CD11300AE8947 /* UIViewController+InitViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F08A1E238CD11300AE8947 /* UIViewController+InitViewConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		80E45C8F238B85A2009FBF76 /* RXCFirstTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCFirstTimeViewController.swift; sourceTree = "<group>"; };
 		80E45C90238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FirstTimeFunction.swift"; sourceTree = "<group>"; };
 		80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MethodSwitch.swift"; sourceTree = "<group>"; };
+		80F08A1E238CD11300AE8947 /* UIViewController+InitViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+InitViewConstraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				80E45C8E238B85A2009FBF76 /* UIVIewController+LifeCycleTask.swift */,
 				80E45C8D238B85A1009FBF76 /* UIViewController+MethodCalled.swift */,
 				80E45C91238B85A2009FBF76 /* UIViewController+MethodSwitch.swift */,
+				80F08A1E238CD11300AE8947 /* UIViewController+InitViewConstraints.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F08A1F238CD11300AE8947 /* UIViewController+InitViewConstraints.swift in Sources */,
 				80E45C94238B85A2009FBF76 /* RXCFirstTimeViewController.swift in Sources */,
 				80E45C95238B85A2009FBF76 /* UIViewController+FirstTimeFunction.swift in Sources */,
 				80E45C96238B85A2009FBF76 /* UIViewController+MethodSwitch.swift in Sources */,

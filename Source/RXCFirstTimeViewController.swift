@@ -10,6 +10,37 @@ import UIKit
 
 extension UIViewController {
 
+    public enum FTVVisibility:Int {
+        case none = 0
+        case didDisappear
+        case willDisappear
+        case willAppear
+        case didAppear
+    }
+
+    public enum FTVLifeCycle: Int {
+        ///just inited
+        case none = 0
+        case loadView
+        case viewDidLoad
+        case viewWillAppear
+        @available(iOS 11, *)
+        case viewLayoutMarginsDidChange
+        @available(iOS 11, *)
+        case viewSafeAreaInsetsDidChange
+        @available(iOS 6, *)
+        case updateViewConstraints
+        case viewWillLayoutSubviews
+        case viewDidLayoutSubviews
+        case viewDidAppear
+        case viewWillDisappear
+        case viewDidDisappear
+    }
+
+}
+
+extension UIViewController {
+
     public static var ftv_debug:Bool = false
 
     ///start method exchange, no any queue safe guarantees, make sure will only be called once

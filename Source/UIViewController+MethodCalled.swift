@@ -10,37 +10,6 @@ import UIKit
 
 extension UIViewController {
 
-    public enum FTVVisibility:Int {
-        case none = 0
-        case didDisappear
-        case willDisappear
-        case willAppear
-        case didAppear
-    }
-
-    public enum FTVLifeCycle: Int {
-        ///just inited
-        case none = 0
-        case loadView
-        case viewDidLoad
-        case viewWillAppear
-        @available(iOS 11, *)
-        case viewLayoutMarginsDidChange
-        @available(iOS 11, *)
-        case viewSafeAreaInsetsDidChange
-        @available(iOS 6, *)
-        case updateViewConstraints
-        case viewWillLayoutSubviews
-        case viewDidLayoutSubviews
-        case viewDidAppear
-        case viewWillDisappear
-        case viewDidDisappear
-    }
-
-}
-
-extension UIViewController {
-
     internal struct Key {
         static var ftv_lifeCycle = "ftv_lifeCycle"
         static var ftv_visibility = "ftv_visibility"
